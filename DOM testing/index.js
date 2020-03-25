@@ -95,37 +95,5 @@ Mytxt.onblur=function()
 
 
 
-//ECMA6
-
-let person = {
-    name: 'Jack',
-    age: 18
-  };
-  
-  let newPerson = person; //  newPerson references person
-  newPerson.name = 'Bob'; 
-  
-  console.log(person.name); // Bob
-  console.log(newPerson.name); // Bob
 
 
-  //use Object.assign() to create a new object.
-  let person = {
-    name: 'Jack',
-    age: 18
-  };
-  
-  let newPerson = Object.assign({}, person); 
-  newPerson.name = 'Bob';
-  
-  console.log(person.name); // Jack
-  console.log(newPerson.name); // Bob
-
-  //you can assign a value to an object property in the Object.assign() statement
-
-  let person = {
-    name: 'Jack',
-    age: 18
-  };
-  
-  let newPerson = Object.assign({}, person, {name: 'Bob'});
